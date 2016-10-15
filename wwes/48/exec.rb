@@ -1,5 +1,5 @@
 require_relative 'forecast'
-survey = Survey.new.params
+survey = Survey.make
 forecast = Forecast.new(APItoJSON.hash(survey))
 
 puts "#{survey[:position]} weather:\n
